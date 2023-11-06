@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+#usaha, #gravitasi, #kalor, #html {
+    background-size:cover;
+    background-position: center;
+    background-color: rgba(4, 15, 22, 0.4);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#mainpage {
+    background-image: url('mainbg.png');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(4, 15, 22, 0.8);
+    background-blend-mode: multiply;
+}
+
+#usaha {
+    background-image: url('energy.jpg');
+}
+
+#gravitasi {
+    background-image: url('gravity.jpg');
+}
+
+#kalor {
+    background-image: url('kalor.jpeg');
+}
+
+#html {
+    background-image: url('frontend.jpg');
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: calc( 100vh - 120px );
+    align-items: center;
+    border-radius: border-box;
+}
+
+.judulRoom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0 30px;
+    align-items: center;
+    border-radius: border-box;
+}
+
+.wrap {
+    padding: 0.7rem;
+}
+
+.judul {
+    width: fit-content;
+    max-width: 510px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 3px solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+.subjudul {
+    font-size: 1.1rem;
+    margin: 20px 0 10px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: white;
+    color: rgba(4, 15, 22, 1);
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0 0.5rem;
+}
+
+h2  {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+h3  {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: black;
+}
+
+p {
+    font-size: 1rem;
+}
+
+section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+}
+
+section p, section h2, section li, tr, td, sup, sub, strong {
+    color: #040F16 !important;
+}
+
+strong {
+    display: block;
+    margin: 8px 0;
+}
+
+xmp {
+    background-color: rgb(49, 49, 49);
+    font-size: 20px;
+    font-family: monospace;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+b {
+    color: rgba(0,18,66,1);
+}
+
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0.5rem;
+}
+
+table {
+    margin: 0.5rem;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slideshow-container {
+    width: 100%;
+    max-width: 1000px;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    margin: 10px auto;
+    overflow: hidden;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.desc {
+    background-color: white;
+    color: rgba(4,15,22,1);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.desc p, .desc li {
+    color: rgba(4,15,22,1);
+    margin: 5px 0;
+}
+
+.pfp {
+    border-radius: 1rem;
+    width: 100%;
+    background-image: url('\webdev.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.subjects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.subject {
+    width: 200px;
+    align-items: flex-start;
+    height: 200px;
+    overflow: hidden;
+}
+
+.subject img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.subject h5 {
+    margin: 10px 0;
+    color: rgba(4,15,22,1);
+}
+
+.subject a {
+    text-decoration: none;
+    margin: 0 0 5px;
+    background-color: white;
+    color: rgba(4,15,22,1);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.icon {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.subject:hover {
+    height: fit-content;
+}
+
+.subject:hover .icon{
+    display: none;
+}
+
+.drop {
+    transition: width 2s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 200px;
+}
+
+@media (max-width: 800px) {
+    .profile {
+      flex-direction: column;
+    }
+    .judul {
+        width: 100%;
+        animation: none;
+        word-wrap: break-word;
+    }
+  }
+
+html::-webkit-scrollbar {
+    display: none;
+  }
+  html {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }

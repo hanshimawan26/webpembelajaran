@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Pembelajaran Kolese Kanisius</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body id="html">
+  <header>
+    <div class="logoContainer">
+      <img src="hjh logo removebg.png" alt="" class="logohjh">
+      <h3 class="title">Web Pembelajaran</h3>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Informatika
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="html.html">Perkenalan HTML</a>
+          <a href="list.html">List HTML</a>
+          <a href="tabel.html">Tabel HTML</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Fisika
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="gravitasi.html">Gravitasi</a>
+          <a href="usaha.html">Usaha dan Energi</a>
+          <a href="kalor.html">Suhu dan Kalor</a>
+        </div>
+      </div>
+      <a href="about.html">Tentang Saya</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="hamburger" onclick="myFunction()">&#9776;</a>
+  </header>
+  <div class="header">
+    <div class="banner">
+      <h1>List HTML</h1>
+    </div>
+  </div>
+  <main class="wrap">
+    <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+      <h2>Apa Itu List?</h2>
+      <p>
+        Link/hyperlink digunakan untuk berpindah dari satu halaman/bagian ke halaman/bagian lain.
+        Dengan cara mengklik suatu teks atau gambar, kita dapat melompat ke halaman/bagian lain.
+      </p>
+      <p>
+        Ketika penunjuk mouse berada di atas teks atau gambar suatu link maka bentuk penunjuk
+        mouse agar berubah menjadi bentuk tangan kecil.
+      </p>
+    </section>
+    <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+      <h2>Syntax List</h2>
+      <p>Tag a digunakan untuk menentukan hyperlink.</p>
+      <xmp> <a href=”url”> teks link </a> </xmp>
+      <ul>
+        <li>href: suatu atribut yang menunjukkan tujuan link.</li>
+        <li>teks link: suatu teks yang dapat diklik untuk berpindah ke halaman/bagian lain.</li>
+      </ul>
+      <p>Contoh:</p>
+      <xmp><a href="https://www.kanisius.com/">Ke Kanisius</a></xmp>
+      <p>
+        Secara default pada semua browser, tampilan teks link berubah warna seperti sebagai berikut
+        <ul>
+          <li>Link yang belum pernah diklik (visited link) bergaris bawah dan berwarna biru.</li>
+          <li>Link yang sudah pernah diklik (unvisited link) bergaris bawah dan berwarna jingga.</li>
+          <li>Link yang aktif (active link) bergaris bawah dan berwarna merah.</li>
+        </ul>
+        Untuk mendapatkan style yang lebih menarik, link harus diatur dengan CSS.
+      </p>
+    </section>
+    <section data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+      <h3>Sumber</h3>
+      <ul>
+        <li>Modul Informatika Kelas 11: HTML & CSS</li>
+      </ul>
+    </section>
+  </main>
+  <div class="side">
+    <img src="lexus ad.jpg" alt="" class="iklan">
+    <img src="boeing ad.jpg" alt="" class="iklan">
+  </div>
+  <footer class="footer">
+    <div class="inner-footer">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(66, 200, 245, 0.7)" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(144,204,224,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(161,208,209,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(163, 222, 227)" />
+        </g>
+      </svg>
+    </div>
+    </div>
+    <div class="content flex">
+      <p>Hans Joseph Himawan IT2 21</p>
+    </div>
+  </footer>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
